@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobsity</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<input type="checkbox" id="menu">
+	<label for="menu" id="logoMenu"> <i class="fas fa-bars"></i></label>
+	<header class="centrarV">
+		<div class="absolute" id="logo">
+			<img src="img/logo.png" class="centrar absolute" id="jobsity">
+		</div>
+		<div class="centrarV absolute" id="bookshelf">
+			<p id="titulo">Bookshelf</p>
+		</div>
+		<section class="centrarV absolute" id="barra">
+				<div class="absolute" id="separador"></div>
+				<i class="fas fa-search absolute" id="lupa"></i>
+				<input type="text" class="absolute" id="buscador" placeholder="Search...">
+				<div class="centrarV absolute" id="login">
+					<p class="absolute" id="nombre">Jakob Treml</p>
+					<i class="fas fa-angle-down absolute" id="flecha"></i>
+					<img src="img/foto.png" class="absolute" id="foto">
+				</div>
+		</section>
+	</header>
+	<section id="cuerpo">
+		<aside class="absolute" id="sidebar1">
+			<div>
+				<h2>MAIN</h2>
+				<ul>
+					<li> <i class="fas fa-globe"></i> <a href="">Quito</a> </li>
+					<li> <i class="fas fa-globe"></i> <a href="">Cartagena</a></li>
+					<li> <i class="fas fa-globe"></i> <a href="">Medellín</a></li>
+					<li> <i class="fas fa-tablet-alt"></i> <a href="">Digital</a></li>
+					<li> <i class="fas fa-user-tag"></i> <a href="">Personal Loans</a></li>
+					<li> <i class="fas fa-tags"></i> <a href="">New Releases</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>YOUR BOOKS</h2>
+				<ul>
+					<li> <i class="fas fa-book-open"></i> <a href="">Readings</a></li>
+					<li> <i class="fas fa-history"></i> <a href="">History</a></li>
+					<li> <i class="fas fa-bookmark"></i> <a href="">Read Later</a></li>
+					<li> <i class="fas fa-heart"></i> <a href="">Favorites</a></li>
+				</ul>
+			</div>
+		</aside>
+		<aside class="absolute" id="sidebar2">
+			<div id="sideD">
+				<h2>MOST READ BOOKS</h2>
+				<ol>
+					<li><a href="">Hooked: How to Build Habit-…</a></li>
+					<li><a href="">The Inevitable: Understandin…</a></li>
+					<li><a href="">Lean In: Women, Work, and t…</a></li>
+					<li><a href="">Building a Business When Th…</a></li>
+					<li><a href="">How Google Works</a></li>
+				</ol>
+			</div>
+		</aside>
+		<section class="absolute" id="contenido">
+			<div class="centrarV absolute" id="encabezado">
+				<p class="absolute" id="subtitulo">New Releases</p>
+				<div class="centrarV absolute" id="tipoPresentacion">
+					<li class="absolute" id="release"><a href="">Release Date</a></li>
+					<div class="absolute" id="separador2"></div>
+					<li class="absolute" id="popularity"><a href="">Popularity</a></li>	
+				</div>
+				<i class="fas fa-th-large absolute" id="cuadricula"></i>
+				<i class="fas fa-th-list absolute" id="lista"></i>
+			</div>
+			<section class="absolute" id="libros">
+				<section class="absolute" id="contenedorLibros">
+					<section class="libro" id="libro1">
+						<li><a href=""><img src="img/everything.jpg" class="portada"></a></li>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Everything I never Told Y...</p>
+							<p class="absolute autor">Celeste Ng</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/bigLittle.jpg" class="portada" id="libroDescrip"></a></li>
+						<div class="descripcion">
+							<div id="inf">
+								<div class="circle absolute" id="c1">
+									<i class="far fa-heart absolute"></i>
+								</div>
+								<div class="circle absolute" id="c2">
+									<i class="far fa-bookmark absolute"></i>
+								</div>
+								<div class="absolute" id="cc">
+									<i class="fas fa-book-open absolute"></i>
+								</div>
+								<p id="rateThis" class="absolute">RATE THIS BOOK</p>
+								<div class="calif">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</div>
+							</div>
+							<div id="bookInfo">
+								<i class="fas fa-caret-left" id="direccion"></i>
+								<h3>ALL THE LIGHT WE CANNOT SEE</h3>
+								<p id="year">2014</p>
+								<p id="novelBy">Novel by</p>
+								<p id="autorInfo">Anthony Doerr</p>
+								<p id="nPages">544 pages</p>
+								<h4 id="summary">SUMMARY</h4>
+								<p id="summaryText">
+									From the highly acclaimed, multiple award-winning<br>
+									Anthony Doerr, the beautiful, stunningly ambitious<br>
+									instant New York Times bestseller about a blind French<br>
+									girl and German boy whose paths collide in occupied<br>
+									France as both try to survive devastation of Word War II.
+								</p>
+								<h4 id="ratingTitulo">RATING</h4>
+								<div class="rating">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<i class="far fa-star"></i>
+								</div>
+								<h4 id="recom">RECOMMENDED BY</h4>
+								<img src="img/photo1.png">
+								<img src="img/photo2.png">
+								<img src="img/photo3.png">
+							</div>
+							<p class="absolute tituloLibro">All The Light We Cannot...</p>
+							<p class="absolute autor">Anthony Doerr</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/boneClocks.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Everything I never Told Y...</p>
+							<p class="absolute autor">Celeste Ng</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/revival.png" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Everything I never Told Y...</p>
+							<p class="absolute autor">Celeste Ng</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/redeployment.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Everything I never Told Y...</p>
+							<p class="absolute autor">Phil Kaly</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/euphoria.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Euphoria</p>
+							<p class="absolute autor">Lily King</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<div class="cinta" id="userCheck">
+							<img src="img/cinta.png">
+							<i class="fas fa-user-check usr"></i>
+						</div>
+						<li><a href=""><img src="img/bigLittle.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Big Little Lies</p>
+							<p class="absolute autor">Liane Moriarty</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/boneClocks.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">The Bone Clocks</p>
+							<p class="absolute autor">David Mitchell</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/revival.png" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Revival</p>
+							<p class="absolute autor">Stephen King</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/station11.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Station Eleven</p>
+							<p class="absolute autor">Emily St. John Mandel</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/being.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Being Mortal</p>
+							<p class="absolute autor">Atul Gawande</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/savage.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">Savage Harvest</p>
+							<p class="absolute autor">Carl Hoffman</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/unknown.png" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">The Book Of Unknown A...</p>
+							<p class="absolute autor">Cristina Henríquez</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/paying.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">The Paying Guests</p>
+							<p class="absolute autor">Sarah Waters</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>
+					<section class="libro">
+						<li><a href=""><img src="img/we.jpg" class="portada"></a></li>
+						</div>
+						<div class="descripcion">
+							<p class="absolute tituloLibro">We Were Liars</p>
+							<p class="absolute autor">E. Lockhart</p>
+							<div class="calificacion">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="far fa-star"></i>
+							</div>
+						</div>
+					</section>					
+				</section>
+			</section>
+		</section>
+	</section>
+	<script>
+		$(function(){
+			$("#libroDescrip").hover(function(){ $("#inf").show();})
+			$("#inf").hover(function(){ $("#inf").show();})
+			$(".tituloLibro").mouseout(function(){$("#inf").hide();})
+
+			$("#libroDescrip").hover(function(){ $("#bookInfo").show();})
+			$("#inf").hover(function(){ $("#bookInfo").show();})
+			$(".tituloLibro").mouseout(function(){$("#bookInfo").hide();})
+		})
+	</script>
+</body>
+</html>

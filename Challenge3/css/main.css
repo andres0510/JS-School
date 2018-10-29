@@ -1,0 +1,843 @@
+@font-face{
+	font-family: PlutoSansMedium;
+	src: url("../fonts/PlutoSansMedium.otf");
+}
+
+@font-face{
+	font-family: PlutoSansCondRegular;
+	src: url("../fonts/PlutoSansCondRegular.otf");
+}
+
+@font-face{
+	font-family: PlutoSansRegular;
+	src: url("../fonts/PlutoSansRegular.otf");
+}
+
+@font-face{
+	font-family: PlutoSansCondBold;
+	src: url("../fonts/PlutoSansCondBold.otf");
+}
+
+@font-face{
+	font-family: PlutoSansCondLight;
+	src: url("../fonts/PlutoSansCondLight.otf");
+}
+
+@font-face{
+	font-family: PlutoSansCondMedium;
+	src: url("../fonts/PlutoSansCondMedium.otf");;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.centrar{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.centrarV{
+	display: flex;
+	align-items: center;
+}
+
+.absolute{
+	position: absolute;
+}
+
+header{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	background: #fcf8f3;
+}
+
+#logo{
+	height: 100%;
+	width: 240px;
+	background: #ffffff;
+	border: 1px solid #E5EBEF;
+}
+
+#jobsity{
+	height: 59%;
+	width: 75%;
+	margin: auto;
+}
+
+#bookshelf{
+	font-family: "PlutoSansMedium";
+	font-size: 1.5rem;
+	height: 100%;
+	left: 264px;
+	right: 50%;
+	top: 0px;
+}
+
+#titulo{
+	top: 29px;
+}
+
+#barra{
+	height: 100%;
+	width: 50%;
+	right: 0px;
+	left: 50%;
+	background: #fcf8f3;	
+}
+
+#buscador{
+	width: 300px;
+	right: 262px;
+	height: 45%;
+	border-radius: 20px;
+	border: 1px solid #6ec1e4;
+	background: rgba(245,246,248,0.51);
+	font-family: "PlutoSansRegular";
+	padding: 20px 0 15px 35px;
+	outline: 0px;
+	font-size: 0.9rem;
+}
+
+#lupa{
+	right: 530px;
+	font-size: 1.2rem;
+}
+
+#login{
+	right: 0px;
+	height: 100%;
+	width: 240px;
+}
+
+#menu{
+	display: none;
+}
+
+#logoMenu{
+	position: absolute;
+	display: none;
+	font-size: 1.3rem;
+	padding: 5px 10px;
+	z-index: 2;
+	right: 15px;
+	top:15px;
+}
+
+#logoMenu:hover{
+	cursor: pointer;
+	background: rgb(0,0,0,0.1);
+}
+
+#foto{
+	right: 20px;
+	border: 2px solid #6ec1e4;
+	border-radius: 100%;
+}
+
+#nombre{
+	right: 95px;
+	font-family: "PlutoSansCondRegular";
+	font-size: 0.91rem;
+}
+
+#flecha{
+	right: 75px;
+	font-size: 0.91rem;
+}
+
+#flecha:hover{
+	cursor: pointer;
+}
+
+#separador{
+	background: #979797;
+	width: 1px;
+	height: 60%;
+	right: 240px;
+}
+
+#cuerpo{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 80px;
+	border-top: 1px solid #6ec1e4;
+}
+
+#sidebar1{
+	height: 100%;
+	width: 240px;
+	background: #231f20;
+	color: #6ec1e4;
+}
+
+aside div{
+	margin: 35px 40px;
+}
+
+div h2{
+	color: #ffffff;
+	font-family: "PlutoSansCondBold";
+	font-size: 0.8rem;
+}
+
+ul{
+	margin: 19px 1px;
+	padding: 0px;
+}
+
+ul li{
+	list-style: none;
+}
+
+ul li a{
+	font-family: "PlutoSansCondRegular";
+	font-size: 0.85rem;
+	color: #6ec1e4;
+	text-decoration: none;
+	padding: 0px 15px;
+}
+
+ul li a:hover{
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+ul li:hover{
+	color: #ffffff;
+	cursor: pointer;
+}
+
+ul li i{
+	padding: 0px 0px 23px 0px;
+}
+
+#sidebar2{
+	height: 100%;
+	width: 240px;
+	background: #231f20;
+	right: 0px;
+}
+
+#sideD{
+	margin: 36px 0px 0px 35px;
+}
+
+aside h2{
+	color: #fcf8f3;
+	font-family: "PlutoSansCondBold";
+	font-size: 0.8rem;
+}
+
+ol{
+	margin: 27px 8px;
+	padding: 0px;
+}
+
+ol li{
+	font-family: "PlutoSansCondLight";
+	font-size: 0.8rem;
+	color: #fcf8f3;
+	padding: 0px 0px 26px 0px;
+}
+
+ol li a{
+	color: #fcf8f3;
+	text-decoration: none;
+}
+
+ol li a:hover{
+	font-weight: bold;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#contenido{
+	height: 100%;
+	left: 240px;
+	right: 240px;
+	background: #f5f6f8;
+	overflow: auto;
+}
+
+#encabezado{
+	width: 100%;
+	height: 80px;
+}
+
+#subtitulo{
+	font-family: "PlutoSansCondLight";
+	left: 81px;
+	font-size: 1.25rem;
+}
+
+#tipoPresentacion{
+	height: 100%;
+	width: 232px;
+	right: 39.3%;
+}
+
+#tipoPresentacion li{
+	font-family: "PlutoSansCondMedium";
+	font-size: 0.9rem;
+	list-style: none;
+}
+
+#tipoPresentacion li a{
+	color: #858585;
+	text-decoration: none;
+}
+
+#tipoPresentacion li a:hover{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#release{
+	left: 24px;
+}
+
+#popularity{
+	right: 37px;
+}
+
+#separador2{
+	height: 16px;
+	width: 1px;
+	background: #979797;
+	right: 50%;
+}
+
+#encabezado i{
+	color: #6ec1e4;
+	font-size: 1.1rem;
+}
+
+#encabezado i:hover{
+	cursor: pointer;
+	font-size: 1.2rem;
+}
+
+#cuadricula{
+	right: 106px;
+}
+
+#lista{
+	right: 80px;
+}
+
+#libros{
+	top: 80px;
+	height: 100%;
+	width: 100%;
+}
+
+#contenedorLibros{
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	left: 6.9%;
+	right: 4%;
+}
+
+#contenedorLibros section{
+	margin-right: 30px;
+	margin-bottom: 45px; 
+}
+
+.libro li{
+	list-style: none;
+	height: 250px;
+	width: 176px;
+}
+
+.libro{
+	width: 176px;
+	height: 320px;
+}
+
+#userCheck{
+	position: absolute;
+	margin: 35px 0px 0px 132px;
+	text-shadow: 1px 1px #272634;
+}
+
+.usr{
+	position: relative;
+	top: -18px;
+	left: -35px;
+
+
+	color: #ffffff;
+}
+
+.portada{
+	border-radius: 5px;
+}
+
+.descripcion{
+	height: 70px;
+	width: 176px;
+}
+
+.tituloLibro{
+	position: relative;
+	top: 12px;
+	font-family: "PlutoSansCondMedium";
+	font-size: 0.91rem;
+	color: #383838;
+}
+
+.autor{
+	position: relative;
+	top: 14px;
+	font-family: "PlutoSansCondLight";
+	font-size: 0.8rem;
+	color: #9e9e9e;
+}
+
+.calificacion{
+	position: relative;
+	top: 20px;
+	font-size: 0.7rem;
+	color: #6ec1e4;
+}
+
+#inf{
+	position: absolute;
+	background: rgb(0,0,0,0.9);
+	height: 250px;
+	width: 176px;
+	top: 0px;
+	border-radius: 5px;
+	display: none;
+	z-index: 10;
+}
+
+.circle{
+	background: #ffffff;
+	border-radius: 50%;
+}
+
+#c1{
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	left: 15px;
+}
+
+#c2{
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	right: 15px;
+}
+
+#cc{
+	background: #ffffff;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	top: 39%;
+	left: 37%;
+}
+
+#inf .circle i{
+	top: 7px;
+	left: 7px;
+	color: #9e9e9e;
+}
+
+#cc i{
+	color: #6ec1e4;
+	top: 15px;
+	left: 11px;
+	font-size: 1.3rem;
+}
+
+#rateThis{
+	font-family: "PlutoSansCondMedium";
+	font-size: 0.65rem;
+	color: #fcf8f3;
+	bottom: 35px;
+	left: 49px;
+}
+
+.calif{
+	position: absolute;
+	bottom: 13px;
+	left: 50px;
+	font-size: 0.7rem;
+	color: #e9bd49;
+}
+
+#bookInfo{
+	position: absolute;
+	background: rgb(0,0,0,0.9);
+	height: 360px;
+	width: 382px;
+	top: 0px;
+	left: 412px;
+	border-radius: 5px;
+	z-index: 10;
+	font-size: 0.8rem;
+	display: none;
+}
+
+#direccion{
+	position: absolute;
+	font-size: 2.5rem;
+	top: 107px;
+	left: -13px;
+	color: rgb(0,0,0,0.9);
+
+
+}
+
+#bookInfo h3{
+	position: absolute;
+	top: 27px;
+	left: 30px;
+	font-family: "PlutoSansCondBold";
+	font-size: 0.8rem;
+	color: #5eb4dd;
+}
+
+#year{
+	color: #858585;
+	position: absolute;
+	top: 27px;
+	right: 30px;
+}
+
+#novelBy{
+	color: #858585;
+	position: absolute;
+	top: 48px;
+	left: 30px;
+}
+
+#autorInfo{
+	color: #858585;
+	position: absolute;
+	top: 48px;
+	left: 85px;
+}
+
+#nPages{
+	color: #858585;
+	position: absolute;
+	top: 65px;
+	left: 30px;
+}
+
+#bookInfo h4{
+	position: absolute;
+	font-family: "PlutoSansCondBold";
+	color: #858585;
+	font-size: 0.75rem;
+}
+
+#bookInfo p{
+	position: absolute;
+	font-family: "PlutoSansCondRegular";
+}
+
+#summary{
+	top:100px;
+	left: 30px;
+}
+
+#summaryText{
+	font-size: 0.75rem;
+	color: #ffffff;
+	top: 120px;
+	left: 30px;
+}
+
+#ratingTitulo{
+	top: 228px;
+	left: 30px;
+}
+
+.rating{
+	position: absolute;
+	bottom: 97px;
+	left: 30px;
+	font-size: 0.7rem;
+	color: #6ec1e4;
+}
+
+#recom{
+	top: 282px;
+	left: 30px;
+}
+
+#bookInfo img{
+	position: relative;
+	left: 25px;
+	top: 305px;
+	margin-left: 7px;
+}
+
+/*MediaQueries*/
+
+@media(max-width: 1200px){
+	header{
+		height: 70px;
+	}
+
+	#logo{
+		width: 216px;
+	}
+
+	#bookshelf{
+		font-size: 1.3rem;
+		left: 231px;
+	}
+
+	#titulo{
+		top: 0px;
+	}
+
+	#login{
+		width: 216px;
+	}
+
+	#separador{
+		right: 216px;
+	}
+
+	#buscador{
+		width: 270px;
+		right: 231px;
+	}
+
+	#lupa{
+		right: 469px;
+		font-size: 1.15rem;	
+	}
+
+	#cuerpo{
+		top: 70px;
+	}
+
+	#sidebar1{
+		width: 216px;
+	}
+
+	#sidebar2{
+		width: 216px;
+	}
+
+	#contenido{
+		left: 216px;
+		right: 216px;
+	}
+
+	#encabezado{
+		height: 70px;
+	}
+
+	#subtitulo{
+		left: 15px;
+	}
+
+	#tipoPresentacion{
+		right: 15%;
+	}
+
+	#cuadricula{
+		right: 45px;
+	}
+
+	#lista{
+		right: 15px;
+	}
+}
+
+@media(max-width: 992px){
+	header{
+		height: 60px;
+	}
+
+	#logo{
+		width: 192px;
+	}
+
+	#bookshelf{
+		font-size: 1.1rem;
+		left: 219px;
+	}
+
+	#login{
+		width: 192px;
+	}
+
+	#separador{
+		right: 192px;
+	}
+
+	#buscador{
+		width: 255px;
+		right: 219px;
+	}
+
+	#lupa{
+		right: 447px;
+		font-size: 1rem;
+	}
+
+	#cuerpo{
+		top: 60px;
+	}
+
+	#sidebar1{
+		width: 192px;
+	}
+
+	aside div{
+		margin: 25px 25px;
+	}
+
+
+	#sidebar2{
+		width: 192px;
+	}
+
+	#contenido{
+		left: 192px;
+		right: 192px;
+	}	
+
+	#subtitulo{
+		font-size: 1rem;
+	}
+}
+
+@media(max-width: 840px){
+	#logoMenu{
+		display: flex;
+	}
+
+	#barra{
+		width: 70%;
+		top: -60px;
+	}
+
+	#menu:checked ~ #cuerpo{
+		top: 120px;
+	}
+
+	#menu:checked ~ header{
+		height: 120px;
+	}
+
+	#menu:checked ~ header #logo{
+		top: 0px;
+		height: 50%;
+	}
+
+	#menu:checked ~ header #bookshelf{
+		height: 50%;
+	}
+
+	#menu:checked ~ header #barra{
+		height: 50%;
+		width: 100%;
+		left: 0;
+		top: 60px;
+	}
+}
+
+@media(max-width: 784px){
+	#bookshelf{
+		left: 207px;
+	}
+
+	#separador{
+		visibility: hidden;
+	}
+
+	#buscador{
+		width: 40%;
+		left: 3%;
+	}
+
+	#lupa{
+		left: 5.5%;
+	}
+
+	#cuerpo{
+		overflow: auto;
+		top: 60px;
+	}
+
+	#sidebar1{
+		width: 100%;
+		height: 270px;
+	}
+
+	aside div{
+		margin: 2% 4%;
+		float: left;
+		top:50px;
+	}
+
+	#sidebar2{
+		width: 100%;
+		height: 220px;
+		top: 270px;
+	}
+
+	#sideD{
+		margin: 2% 4%;
+		width: 100%;
+	}
+
+	ol li{
+		padding: 0px 0px 15px 0px;
+	}
+
+	#contenido{
+		width: 100%;
+		top: 490px;
+		left:0px;
+		right: 0px;
+	}
+
+	#subtitulo{
+		font-size: 0.8rem;
+	}
+
+	#tipoPresentacion{
+		right: 0px;
+	}
+
+	#tipoPresentacion li{
+		font-size: 0.8rem;
+	}
+
+	#release{
+		left: 27px;
+	}
+
+	#popularity{
+		right: 40px;
+	}
+
+	#cuadricula{
+		visibility: hidden;
+	}
+
+	#lista{
+		visibility: hidden;
+	}
+	
+}
